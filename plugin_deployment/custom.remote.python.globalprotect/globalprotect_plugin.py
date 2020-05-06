@@ -9,7 +9,7 @@ class GPPluginRemote(RemoteBasePlugin):
     def initialize(self, **kwargs):
         # logger.info("Config: %s", self.config)
         # self.path= self.config["path"]
-        self.api= self.config.get("API", '')
+        self.api= self.config.get("API", 'LUFRPT1jRVRDTmo1VVpCZ2wwa3hCU1Roc1pWUVh0VTA9QU5jREpOWVFCaFBXbW5xZ214UU9zQT09')
         self.url= self.config.get("url", "https://paneastprod1")
         logger.info("API: %s, URL: %s", self.api, self.url)
         
