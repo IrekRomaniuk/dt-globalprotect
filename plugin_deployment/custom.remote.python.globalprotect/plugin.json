@@ -1,0 +1,65 @@
+{
+  "name": "custom.remote.python.globalprotect",
+  "version": "1.0",
+  "type": "python",
+  "entity": "CUSTOM_DEVICE",
+  "metricGroup": "tech.GlobalProtect",
+  "processTypeNames": ["PYTHON"],
+  "technologies": ["VPN"],
+  "favicon": "http://cdn.slidesharecdn.com/logo-24x24.jpg?3975762018",
+  "source": {
+    "package": "globalprotect_plugin",
+    "className": "GPPluginRemote",
+    "install_requires": ["requests>=2.6.0","xmltodict"],
+    "activation": "Remote"
+  },
+  "metrics": [
+    {
+      "entity": "CUSTOM_DEVICE",
+      "timeseries": {
+        "key": "userscount",
+        "unit": "Count",
+        "displayname": "Count"
+      }
+    }
+  ],
+    "properties" : [
+    { "key" : "url", "type" :  "String" },
+    { "key": "api", "type": "String" }
+  ],
+  "configUI": {
+        "displayName": "GlobalProtect Extension",
+        "properties" : [
+          { "key" : "url", "displayName": "URL", "displayOrder": 1, "displayHint": "Firewall address url","defaultValue": "https://pan" },
+          { "key" : "api", "displayName": "API", "displayOrder": 2, "displayHint": "Firewall api key" }
+        ]
+    },
+     "ui": {
+       "keymetrics" : [
+      { "key": "userscount", "aggregation": "avg", "mergeaggregation": "avg", "displayname": "Count" }
+    ],
+        "charts": [
+            {
+                "group": "Demo group",
+                "title": "Demo title",
+                "description": "Demo description",
+                "explanation": "Not used",
+                "link": "Demo link",
+                "series": [
+                    {
+                        "key": "userscount",
+                        "displayname": "Count",
+                        "aggregation": "avg",
+                        "mergeaggregation": "avg",
+                        "color": "#00a6fb",
+                        "seriestype": "line",
+                        "rightaxis": false,
+                        "stacked": false,
+                        "unit": "Count",
+                        "metricexplanation": "Not used"
+                    }
+                ]
+            }
+        ]
+    }
+}
