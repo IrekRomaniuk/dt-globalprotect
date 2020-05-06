@@ -1,7 +1,6 @@
 import requests, xmltodict, json, urllib3
 from ruxit.api.base_plugin import RemoteBasePlugin
 import logging
-from configparser import ConfigParser
 
 logger = logging.getLogger(__name__)
 
@@ -11,13 +10,8 @@ class GPPluginRemote(RemoteBasePlugin):
         # logger.info("Config: %s", self.config)
         # self.path= self.config["path"]
         self.api= self.config.get("API", '')
-        config = ConfigParser()
-        if not self.api:
-            config.read('config.ini')
-            self.api = config['secret']['API']
         self.url= self.config.get("url", "https://paneastprod1")
         logger.info("API: %s, URL: %s", self.api, self.url)
-        
         
 
     def query(self, **kwargs):
