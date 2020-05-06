@@ -10,7 +10,7 @@ class GPPluginRemote(RemoteBasePlugin):
         # logger.info("Config: %s", self.config)
         # self.path= self.config["path"]
         self.api= self.config.get("API", '')
-        self.url= self.config.get("url", "https://paneastprod1")
+        self.url= self.config.get("url", "https://10.1.3.6")
         logger.info("API: %s, URL: %s", self.api, self.url)
         
 
