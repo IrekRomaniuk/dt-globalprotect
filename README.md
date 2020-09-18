@@ -1,0 +1,1 @@
+c:\Python36\python.exe -m pip install -m pip install xmltodict

@@ -1,12 +1,12 @@
 {
   "name": "custom.remote.python.globalprotect",
-  "version": "1.1",
+  "version": "1.11",
   "type": "python",
   "entity": "CUSTOM_DEVICE",
   "metricGroup": "tech.GlobalProtect",
   "processTypeNames": ["PYTHON"],
-  "technologies": ["VPN"],
-  "favicon": "http://cdn.slidesharecdn.com/logo-24x24.jpg?3975762018",
+  "technologies": ["Firewalls"],
+  "favicon": "https://i.imgur.com/cEqK8Xb.png",
   "source": {
     "package": "globalprotect_plugin",
     "className": "GPPluginRemote",
