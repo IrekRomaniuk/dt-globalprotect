@@ -1,6 +1,6 @@
 {
   "name": "custom.remote.python.globalprotect",
-  "version": "1.11",
+  "version": "1.12",
   "type": "python",
   "entity": "CUSTOM_DEVICE",
   "metricGroup": "tech.GlobalProtect",
@@ -29,7 +29,7 @@
     { "key": "name", "type": "String" }
   ],
   "configUI": {
-        "displayName": "GlobalProtect Extension",
+        "displayName": "GlobalProtect User count",
         "properties" : [
           { "key" : "url", "displayName": "URL", "displayOrder": 1, "displayHint": "Firewall address url https://a.b.c.d", "defaultValue": "https://pan" },
           { "key" : "api", "displayName": "API", "displayOrder": 2, "displayHint": "Firewall api key" },
