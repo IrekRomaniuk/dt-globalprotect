@@ -1,6 +1,6 @@
 {
   "name": "custom.remote.python.globalprotect",
-  "version": "1.12",
+  "version": "1.13",
   "type": "python",
   "entity": "CUSTOM_DEVICE",
   "metricGroup": "tech.GlobalProtect",

@@ -17,7 +17,7 @@ class GPPluginRemote(RemoteBasePlugin):
 
     def query(self, **kwargs):
         # Create the group/device entities in Dynatrace
-        group_name = "GlobalProtect"
+        group_name = "GlobalProtect User count"
         group = self.topology_builder.create_group(group_name, group_name)
         device_name = self.name
         device = group.create_device(device_name, device_name)
